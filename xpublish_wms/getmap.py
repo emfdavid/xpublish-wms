@@ -287,7 +287,7 @@ class OgcWmsGetMap:
             resampled_data[:] = np.nan
 
         reproject_time = time.time()
-        logger.info(f'clip and reproject irregular: {reproject_time - extraction_time}')
+        #logger.info(f'clip and reproject irregular: {reproject_time - extraction_time}')
         return resampled_data
 
     def draw(self, da: xr.DataArray, da_bbox: xr.DataArray) -> io.BytesIO:
